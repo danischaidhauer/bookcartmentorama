@@ -15,7 +15,7 @@ This project aims to run automated tests on the backend and frontend of the Book
 
 ## Tests Executed
 
-- Backend tests: GET, POST, PUT and DELETE.
+- Backend tests: GET and POST
 - Frontend tests: Login, Add to Cart, Wishlist and Searches.
 
 
