@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-10-06T11:10:15.893Z",
+    "end": "2024-10-06T11:10:21.703Z",
+    "duration": 5810,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c3e33655-cd69-4c02-a952-69fb93fe5804",
+      "title": "",
+      "fullFile": "cypress\\e2e\\frontend\\login.cy.js",
+      "file": "cypress\\e2e\\frontend\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ed3d3136-c971-4336-81e2-f217f84df138",
+          "title": "login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login com informaçoes de usuario validas",
+              "fullTitle": "login login com informaçoes de usuario validas",
+              "timedOut": null,
+              "duration": 5729,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login');\ncy.get('.mat-mdc-form-field.ng-tns-c1534922977-1 > .mat-mdc-text-field-wrapper').type(Cypress.env('user').username);\ncy.get('.mat-mdc-form-field-has-icon-suffix > .mat-mdc-text-field-wrapper').type(Cypress.env('user').password, {\n  log: false\n});\ncy.get('button').last().click();\ncy.url().should('equal', `${Cypress.config('baseUrl')}/`);\ncy.get('app-nav-bar').should('contain', Cypress.env('user').username);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'https://bookcart.azurewebsites.net/' to equal 'https://bookcart.azurewebsites.net//'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'https://bookcart.azurewebsites.net/' to equal 'https://bookcart.azurewebsites.net//'\n    at Context.eval (webpack://bloco2mod4/./cypress/e2e/frontend/login.cy.js:13:17)",
+                "diff": "- 'https://bookcart.azurewebsites.net/'\n+ 'https://bookcart.azurewebsites.net//'\n"
+              },
+              "uuid": "713e92b9-4c24-4ece-bcfd-fa0268505fe1",
+              "parentUUID": "ed3d3136-c971-4336-81e2-f217f84df138",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "713e92b9-4c24-4ece-bcfd-fa0268505fe1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5729,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

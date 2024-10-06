@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-06T11:54:08.434Z",
+    "end": "2024-10-06T11:54:25.628Z",
+    "duration": 17194,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d648ecd-c255-48aa-8b23-e268501c799b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\frontend\\listadedesejos.cy.js",
+      "file": "cypress\\e2e\\frontend\\listadedesejos.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d2885f40-c53b-44b8-8a54-6ae6c2d2849c",
+          "title": "carrinho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "adicionar e remover da lista de desejos",
+              "fullTitle": "carrinho adicionar e remover da lista de desejos",
+              "timedOut": null,
+              "duration": 17154,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.wait(5000);\ncy.get(':nth-child(1) > app-book-card > .mat-mdc-card > .mat-mdc-card-content > .favourite').click();\ncy.wait(10000);\ncy.get('.mdc-icon-button.ng-star-inserted > .mat-mdc-button-touch-target').click();\ncy.get('.mat-mdc-card-content').should('contain', 'Title', 'Price');\ncy.get('app-addtowishlist > .mdc-button > .mdc-button__label').click();\ncy.get('.my-4 > .mat-mdc-card > .mat-mdc-card-header').should('contain', 'Your wishlist is empty.');",
+              "err": {},
+              "uuid": "72b96073-242c-4d47-a973-0dfe16c9cc0d",
+              "parentUUID": "d2885f40-c53b-44b8-8a54-6ae6c2d2849c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "72b96073-242c-4d47-a973-0dfe16c9cc0d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17154,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

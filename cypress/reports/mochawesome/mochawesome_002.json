@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-06T11:10:23.469Z",
+    "end": "2024-10-06T11:10:27.203Z",
+    "duration": 3734,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23517427-9b21-48eb-975b-58fc37672c41",
+      "title": "",
+      "fullFile": "cypress\\e2e\\frontend\\search.cy.js",
+      "file": "cypress\\e2e\\frontend\\search.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b7bf01b0-22f1-4574-9219-36cadd509ede",
+          "title": "pesquisa",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "pesquisar livro",
+              "fullTitle": "pesquisa pesquisar livro",
+              "timedOut": null,
+              "duration": 3129,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('.mat-mdc-autocomplete-trigger').type(book.title + '{enter}');\ncy.get('app-book-card > .mat-mdc-card > .mat-mdc-card-content').should('contain', book.title).should('contain', book.price);",
+              "err": {},
+              "uuid": "98d111d8-8268-4251-a459-4899739b7d90",
+              "parentUUID": "b7bf01b0-22f1-4574-9219-36cadd509ede",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "pesquisar autor",
+              "fullTitle": "pesquisa pesquisar autor",
+              "timedOut": null,
+              "duration": 528,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.get('.mat-mdc-autocomplete-trigger').type(book.author + '{enter}');\ncy.get('app-book-card > .mat-mdc-card > .mat-mdc-card-content').should('contain', book.title);",
+              "err": {},
+              "uuid": "106e86fa-de05-4e8f-be64-1cb9dd75812c",
+              "parentUUID": "b7bf01b0-22f1-4574-9219-36cadd509ede",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "98d111d8-8268-4251-a459-4899739b7d90",
+            "106e86fa-de05-4e8f-be64-1cb9dd75812c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3657,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

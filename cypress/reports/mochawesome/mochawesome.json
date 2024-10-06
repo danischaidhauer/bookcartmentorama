@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-06T11:10:08.205Z",
+    "end": "2024-10-06T11:10:13.965Z",
+    "duration": 5760,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "55051b67-37d9-4ff1-a19c-0e6848790fda",
+      "title": "",
+      "fullFile": "cypress\\e2e\\frontend\\carrinho.cy.js",
+      "file": "cypress\\e2e\\frontend\\carrinho.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4f137c9d-e119-4128-952a-8f14c84d9d51",
+          "title": "carrinho",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "adicionar e remover itens no carrinho",
+              "fullTitle": "carrinho adicionar e remover itens no carrinho",
+              "timedOut": null,
+              "duration": 5719,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\ncy.contains('Add to Cart').click();\ncy.get(':nth-child(2) > .mat-mdc-button-touch-target').click();\ncy.get('.my-3').should('contain', 'Harry Potter and the Chamber of Secrets', 'Title');\ncy.get('.my-3').should('contain', 'Price');\ncy.get('.mat-elevation-z4 > .mdc-button__label').click();\ncy.get('.container').should('contain', 'Your shopping cart is empty.');",
+              "err": {},
+              "uuid": "eef1c528-7b29-4342-bacb-8dbdd72da21f",
+              "parentUUID": "4f137c9d-e119-4128-952a-8f14c84d9d51",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "eef1c528-7b29-4342-bacb-8dbdd72da21f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5719,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

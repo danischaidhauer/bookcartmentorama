@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-06T11:10:36.628Z",
+    "end": "2024-10-06T11:10:37.201Z",
+    "duration": 573,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b6bbd371-2fb3-4547-a5f8-ccab922f584c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\backend\\book\\schema.book.cy.js",
+      "file": "cypress\\e2e\\backend\\book\\schema.book.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4fba4508-45ed-4101-a8e1-4439f8eae4a8",
+          "title": "Validar schemas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "listar todos os livros",
+              "fullTitle": "Validar schemas listar todos os livros",
+              "timedOut": null,
+              "duration": 295,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'GET',\n  url: Cypress.env('url').book\n}).then(_book.schemaGetBook);",
+              "err": {},
+              "uuid": "8bc8655c-834f-4853-8a27-d2229ef4d2ef",
+              "parentUUID": "4fba4508-45ed-4101-a8e1-4439f8eae4a8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "listar todas as categorias de livros",
+              "fullTitle": "Validar schemas listar todas as categorias de livros",
+              "timedOut": null,
+              "duration": 232,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'GET',\n  url: Cypress.env('url').book_category\n}).then(_book.schemaGetBookCategory);",
+              "err": {},
+              "uuid": "bd277e03-d74f-462e-a375-8c870a4f817d",
+              "parentUUID": "4fba4508-45ed-4101-a8e1-4439f8eae4a8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8bc8655c-834f-4853-8a27-d2229ef4d2ef",
+            "bd277e03-d74f-462e-a375-8c870a4f817d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 527,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

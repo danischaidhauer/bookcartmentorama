@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Harry Potter and the Goblet of Fire",
+        "author": "JKR",
+        "category": "Fiction",
+        "price": "₹321.00"
+    },
+    {
+        "title": "Harry Potter and the Order of the Phoenix",
+        "author": "JKR",
+        "category": "Mystery",
+        "price": "₹432.00"
+    }
+]

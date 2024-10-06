@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-10-06T11:10:31.861Z",
+    "end": "2024-10-06T11:10:32.222Z",
+    "duration": 361,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a5ea29e6-5c27-4bda-b2f3-109fa0737404",
+      "title": "",
+      "fullFile": "cypress\\e2e\\backend\\Login\\schema.login.cy.js",
+      "file": "cypress\\e2e\\backend\\Login\\schema.login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "697ebf07-2559-4de1-88e5-1fd66b4236ee",
+          "title": "validacao schemas",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login valido",
+              "fullTitle": "validacao schemas login valido",
+              "timedOut": null,
+              "duration": 308,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.api({\n  method: 'POST',\n  url: Cypress.env('url').login,\n  body: {\n    username: Cypress.env('user').username,\n    password: Cypress.env('user').password\n  },\n  failOnStatusCode: false\n}).then(_login.schemaPostLogin);",
+              "err": {},
+              "uuid": "74065e90-f500-4175-8580-aa28c81cb027",
+              "parentUUID": "697ebf07-2559-4de1-88e5-1fd66b4236ee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "74065e90-f500-4175-8580-aa28c81cb027"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 308,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
